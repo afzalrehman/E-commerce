@@ -43,6 +43,7 @@ const Login = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="you@example.com"
           />
           <Input
             id="password"
@@ -52,6 +53,7 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            placeholder="Enter your password"
           />
           <Button type="submit">Login</Button>
         </form>
