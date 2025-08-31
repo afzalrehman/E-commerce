@@ -65,6 +65,7 @@ const Signup = () => {
               value={form.name}
               onChange={handleChange}
               required
+              placeholder="John Doe"
             />
             <Input
               id="email"
@@ -74,6 +75,7 @@ const Signup = () => {
               value={form.email}
               onChange={handleChange}
               required
+              placeholder="you@example.com"
             />
             <Input
               id="password"
@@ -83,6 +85,7 @@ const Signup = () => {
               value={form.password}
               onChange={handleChange}
               required
+              placeholder="Create a password"
             />
             <Input
               id="confirmPassword"
@@ -92,7 +95,9 @@ const Signup = () => {
               value={form.confirmPassword}
               onChange={handleChange}
               required
+              placeholder="Re-enter your password"
             />
+
             <Button type="submit">Sign up</Button>
           </form>
 
@@ -111,7 +116,9 @@ const Signup = () => {
       {/* Right side */}
       <div className="hidden items-center justify-center bg-indigo-100 lg:flex lg:w-1/2">
         <div className="p-8 text-center">
-          <h3 className="mb-6 text-2xl font-bold text-gray-900">Why Join Us?</h3>
+          <h3 className="mb-6 text-2xl font-bold text-gray-900">
+            Why Join Us?
+          </h3>
           <p className="mb-4 text-lg text-gray-700">
             Experience the best ecommerce app for all your needs.
           </p>
